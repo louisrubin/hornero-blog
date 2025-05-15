@@ -1,42 +1,33 @@
 import './Footer.css';
 import horneroFooter from '../assets/hornero-nido.png';
-import chacoCultura from '../assets/chaco-cultura.png';
-import gobChaco from '../assets/gob-chaco.png';
-
-// https://mdbootstrap.com/snippets/standard/mdbootstrap/2885096?view=side
-// https://mdbootstrap.com/snippets/standard/mdbootstrap/2885115?view=side
+import gobChaco from '../assets/logo-gobierno-chaco.png';
+import chacoCultura from '../assets/logo-icch.png';
+import sociocultural from '../assets/logo-direc-sociocultural.png';
 
 export default function Footer() {
     return(
-        <footer className='flex flex-col  items-center bg-marron-bg mt-10 pt-10 '>
-            
+        <footer className='relative md:static w-full h-100 md:h-120 lg:h-120 bg-marron-bg pt-10 '>
+            <h1 className='text-title-marron text-center text-xl md:text-2xl lg:text-3xl mb-8
+            uppercase italic'>"Ingeniería Natural a Pico Limpio"
+            </h1>
 
-            <div className='lg:flex items-center'>
-
-                <div className='gap-8'>
-                    <h1 className='text-title-marron text-center text-xl md:text-2xl lg:text-3xl mb-4 md:mb-22
-                    uppercase italic'>"Ingeniería Natural a Pico Limpio"
-                    </h1>
-
-                    <div className='flex justify-evenly select-none drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]'>
-                        <img src={chacoCultura} alt="Chaco Cultura" className='w-42 h-20'/>
-                        <img src={gobChaco} alt="Gobierno del Chaco" className='w-35 h-17' />
-                    </div>
+            <div className='md:flex justify-center'>
+                <div className='absolute md:static bottom-4 w-1/2 flex flex-col items-center'>
+                    <img src={gobChaco} className=' w-43 h-30' 
+                    alt="Gobierno del Chaco" />
+                    
+                    <img src={chacoCultura} className='w-28 h-10 ' 
+                    alt="Chaco Cultura" />
+                    
+                    <img src={sociocultural} className=' w-40 h-38 ' 
+                    alt="Sociocultural" />
                 </div>
+
+                <img src={horneroFooter} 
+                className='absolute md:static right-0 bottom-0 md:h-80 md:-ml-30 scale-x-[-1] drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)]'
+                alt="Hornero | Ave Nacional" />
                 
-
-                <img src={horneroFooter} alt="Hornero | Ave Nacional"
-                    className='mx-auto h-[30vh] md:h-[40vh] lg:h-[45vh] 
-                    drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]
-                    scale-x-[-1]
-                    select-none' />
             </div>
-
-            {/* <a href="https://github.com/louisrubin/hornero-blog/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-                <span className='opacity-40 text-sm'>Desarrollado por Martín y Luis</span>
-            </a> */}
-            
-
         </footer>
     )
 }

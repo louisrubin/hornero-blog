@@ -5,3 +5,10 @@ footer h1 {
     font-family: "Grenze", serif;
     font-weight: 900;
 }
+
+/* pantalla: SURFACE DUO */
+@media (width: 540px) and (height: 720px) {
+    footer {
+        height: 490px;
+    }
+}

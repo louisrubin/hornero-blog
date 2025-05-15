@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+#root{ 
+    background-color: #af6934;
+}
+
 @theme {
     /* COLORES */
     --color-title-marron: #3c2a1e;
