@@ -3,7 +3,7 @@
 export const sectionsList = [
     {
         title: "El Hornero",
-        image: "/src/assets/hogar-barro-main.jpeg",
+        image: "/assets/body/hogar-barro-main.jpeg",
         imgPosition: "left",
         children:
             <>
@@ -23,7 +23,7 @@ export const sectionsList = [
 
     {
         title: "Ingeniería natural a pico limpio",
-        image: "/src/assets/ingenieria-pico-limpio.jpg",
+        image: "/assets/body/ingenieria-pico-limpio.jpg",
         imgPosition: "right",
         children:
             <>
@@ -41,7 +41,7 @@ export const sectionsList = [
 
     {
         title: "Vida en pareja y canto en dúo",
-        image: "/src/assets/vida-en-pareja.jpeg",
+        image: "/assets/body/vida-en-pareja.jpeg",
         imgPosition: "left",
         children:
             <>
@@ -59,7 +59,7 @@ export const sectionsList = [
 
     {
         title: "Distribución del hornero",
-        image: "/src/assets/mapa-hornero.jpeg",
+        image: "/assets/body/mapa-hornero.jpeg",
         imgPosition: "right",
         children:
             <>
@@ -98,7 +98,7 @@ export const sectionsList = [
 
     {
         title: "Símbolo Nacional",
-        image: "/src/assets/simbolo_nacional.png",
+        image: "/assets/body/simbolo_nacional.png",
         imgPosition: "left",
         children:
             <>
@@ -117,7 +117,7 @@ export const sectionsList = [
 
     {
         title: "Todo sobre el hornero (Furnarius rufus)",
-        image: "/src/assets/info-hornero.png",
+        image: "/assets/body/info-hornero.png",
         imgPosition: "right",
         children: 
             <>
