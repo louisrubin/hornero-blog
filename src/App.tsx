@@ -21,16 +21,17 @@ export default function App() {
             sectionsList.map( (item, index) => (
                 <SectionX 
                     key={index} 
-                    title={item.title} 
-                    text={item.text} 
+                    title={item.title}
                     imagePosition={item.imgPosition as "left" | "right"}  // Convertir el valor explícitamente con as
                     image={item.image} 
-                />
+                >
+                  {item.children}
+                </SectionX>
             ))
         }        
         </div>
         <div className="mt-18 mb-6">
-          <h1 className="text-[8vw] md:text-[6vw] lg:text-[4.5vw] xl:text-[2.8vw] 2xl:text-[2.3vw] font-bold text-gray-800">
+          <h1 className="text-[7vw] md:text-[6vw] lg:text-[4.5vw] xl:text-[2.8vw] 2xl:text-[2.3vw] font-bold text-gray-800">
             Un proyecto en acción
           </h1>
         </div>

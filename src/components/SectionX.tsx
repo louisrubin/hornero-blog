@@ -1,7 +1,7 @@
 
 type Props = {
     title: string;
-    text?: string;
+    children?: React.ReactNode;
     aosAnimationText?: "fade-up" | "fade-left";
     aosAnimationImage?: "fade-up" | "fade-left";
     imagePosition?: "left" | "right";
@@ -13,7 +13,7 @@ export default function SectionX(props: Props) {
     const { imagePosition = "left", aosAnimationText = "fade-up", aosAnimationImage = "fade-left" } = props;
 
     return(
-        <div className="flex flex-col md:flex-row items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-4 mb-14">
             {
                 imagePosition === "left"        // imagen a la izquierda
                 ? (
@@ -30,13 +30,12 @@ export default function SectionX(props: Props) {
             }
 
             <div
-            className="bg-transparent p-6 rounded-lg shadow-lg md:w-full order-1 md:order-2"
+            className="bg-transparent p-6 py-8 lg:py-10 rounded-lg shadow-lg md:w-full order-1 md:order-2"
             data-aos={aosAnimationText}>
                 <h1 className="mb-4 text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800">{props.title}</h1>
-                
-                <p className="text-lg lg:text-xl xl:text-2xl text-gray-700">
-                    { props.text ?? "Pase el texto por parámetro 'text'" }
-                </p>
+                { 
+                    props.children ?? "Agrega el children en AppSectionList --> (children)" 
+                }
             </div>
 
             {

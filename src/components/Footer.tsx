@@ -12,7 +12,7 @@ export default function Footer() {
             </h1>
 
             <div className='md:flex justify-center'>
-                <div className='absolute md:static bottom-4 w-1/2 md:w-1/5 flex flex-col items-center'>
+                <div className='absolute md:static bottom-4 w-1/2 md:w-1/5 flex flex-col items-center opacity-70 lg:opacity-100'>
                     <img src={gobChaco} className=' w-43 h-30'
                     alt="Gobierno del Chaco" />
                     
