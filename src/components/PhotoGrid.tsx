@@ -56,7 +56,7 @@ export default function PhotoGrid() {
             <img
               src={src}
               alt={`Foto ${idx + 1}`}
-              className="object-cover w-full h-32 md:h-45 rounded-lg shadow-lg transition-all duration-300"
+              className="object-cover w-full h-32 md:h-45 rounded-lg shadow-lg transition-all duration-300 select-none"
             />
           </div>
         ))}
