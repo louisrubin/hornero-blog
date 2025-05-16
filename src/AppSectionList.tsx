@@ -98,7 +98,7 @@ export const sectionsList = [
 
     {
         title: "Símbolo Nacional",
-        image: "/src/assets/mapa-hornero.jpeg",
+        image: "/src/assets/simbolo_nacional.png",
         imgPosition: "left",
         children:
             <>
@@ -117,7 +117,7 @@ export const sectionsList = [
 
     {
         title: "Todo sobre el hornero (Furnarius rufus)",
-        image: "/src/assets/mapa-hornero.jpeg",
+        image: "/src/assets/info-hornero.png",
         imgPosition: "right",
         children: 
             <>

@@ -18,7 +18,7 @@ export default function SectionX(props: Props) {
                 imagePosition === "left"        // imagen a la izquierda
                 ? (
                     <div
-                    className="bg-transparent p-6 shadow-lg flex justify-center items-center relative rounded-3xl overflow-auto order-2 md:order-1"
+                    className="bg-transparent p-6 shadow-lg flex justify-center items-center relative rounded-3xl overflow-auto order-1"
                     data-aos={aosAnimationImage}>
                         <img
                             src={props.image}
@@ -30,9 +30,9 @@ export default function SectionX(props: Props) {
             }
 
             <div
-            className="bg-transparent p-6 py-8 lg:py-10 rounded-lg shadow-lg md:w-full order-1 md:order-2"
+            className="bg-transparent p-6 py-8 lg:py-10 rounded-lg shadow-lg md:w-full order-2"
             data-aos={aosAnimationText}>
-                <h1 className="mb-4 text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800">{props.title}</h1>
+                <h1 className="mb-4 text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 uppercase">{props.title}</h1>
                 { 
                     props.children ?? "Agrega el children en AppSectionList --> (children)" 
                 }
@@ -42,7 +42,7 @@ export default function SectionX(props: Props) {
                 imagePosition === "right"        // imagen a la derecha
                 ? (
                     <div
-                    className="bg-transparent p-6 shadow-lg flex justify-center items-center relative rounded-3xl overflow-auto order-3"
+                    className="bg-transparent p-6 shadow-lg flex justify-center items-center relative rounded-3xl overflow-auto order-1 md:order-3"
                     data-aos={aosAnimationImage}>
                         <img
                             src={props.image}
