@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
-@theme {
-    --color-el-pepe: #A26930;
+#root{ 
+    background-color: #af6934;
+}
 
+@theme {
+    /* COLORES */
+    --color-title-marron: #3c2a1e;
+    --color-marron-bg: #af6934;
+    --color-border-marron: #a36a3d;
+
+    
 }
 
