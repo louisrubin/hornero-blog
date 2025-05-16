@@ -29,9 +29,9 @@ export default function App() {
             ))
         }        
         </div>
-        <div className="mt-6 mb-6">
-          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800">
-            Un proyecto en accion
+        <div className="mt-18 mb-6">
+          <h1 className="text-[8vw] md:text-[6vw] lg:text-[4.5vw] xl:text-[2.8vw] 2xl:text-[2.3vw] font-bold text-gray-800">
+            Un proyecto en acción
           </h1>
         </div>
          <PhotoGrid />

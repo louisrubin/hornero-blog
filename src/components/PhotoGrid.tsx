@@ -46,7 +46,7 @@ export default function PhotoGrid() {
 
   return (
     <>
-      <div className="mt-16 grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-5">
         {images.map((src, idx) => (
           <div
             key={idx}
@@ -56,7 +56,7 @@ export default function PhotoGrid() {
             <img
               src={src}
               alt={`Foto ${idx + 1}`}
-              className="object-cover w-full h-32 rounded-lg shadow-lg transition-all duration-300"
+              className="object-cover w-full h-32 md:h-45 rounded-lg shadow-lg transition-all duration-300"
             />
           </div>
         ))}
