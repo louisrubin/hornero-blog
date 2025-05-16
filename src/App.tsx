@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import SectionX from './components/SectionX';
 import { sectionsList } from './AppSectionList';
 import PhotoGrid from './components/PhotoGrid';
+import VideoSection from './components/VideoSection';
 
 export default function App() {
   // Inicializa AOS
@@ -15,7 +16,14 @@ export default function App() {
   }, []);
 
   return (
-    <main className="bg-gradient-to-b from-[#ecddd1] to-[#af6934] min-h-screen p-10 pt-32 max-w-full overflow-hidden xl:px-[20vw]">
+    <>
+    {/* VIDEO SECTION  */}
+    <VideoSection />
+
+
+    {/* CONTENIDO MAIN */}
+    <main className="bg-gradient-to-b from-[#ecddd1] to-[#af6934] min-h-screen p-10 pt-16 max-w-full overflow-hidden xl:px-[20vw]">
+        
         <div>        
         {
             sectionsList.map( (item, index) => (
@@ -37,6 +45,7 @@ export default function App() {
         </div>
          <PhotoGrid />
     </main>
+    </>
   );
 }
 
