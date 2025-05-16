@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SectionX from './components/SectionX';
 import { sectionsList } from './AppSectionList';
+import PhotoGrid from './components/PhotoGrid';
 
 export default function App() {
   // Inicializa AOS
@@ -28,6 +29,12 @@ export default function App() {
             ))
         }        
         </div>
+        <div className="mt-6 mb-6">
+          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800">
+            Un proyecto en accion
+          </h1>
+        </div>
+         <PhotoGrid />
     </main>
   );
 }
