@@ -150,7 +150,10 @@ export const sectionsList = [
                 <ul className="list-disc pl-5 lg:pl-10 text-lg lg:text-xl xl:text-2xl text-gray-700">
                     <li>Insectos</li>
                     <li>Lombrices</li>
+                    <li>Grillos</li>
                     <li>Invertebrados</li>
+                    <li>Hormigas</li>
+                    <li>Vegetales</li>
                 </ul>
 
                 <p className="text-xl lg:text-xl xl:text-2xl my-4 font-medium text-gray-700">Importancia</p>
